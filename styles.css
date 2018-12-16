@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body, div, p, h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+* header
+*/
+.header {
+  background-color: rgba(237, 214, 247, 1);
+  color: white;
+  width: 1280px;
+  height: 50px;
+  padding: 13px 10px 10px 10px;
+}
+
+/*
+* main & sidebar (wrapper)
+*/
+.main-body {
+  background-color: rgb(245, 245, 242);
+  width: 1000px;
+  height: 530px;
+  padding: 30px 20px 10px 50px;
+}
+
+.main-body p {
+  margin: 20px 0 20px 0;
+}
+
+.sidebar {
+  background-color: rgb(240, 234, 236);
+  color: white;
+  width: 280px;
+  height: 530px;
+  padding: 30px 10px 10px 10px;
+}
+
+/*
+* footer
+*/
+.footer {
+  background-color: rgba(177, 175, 179, 1);
+  color: white;
+  width: 1280px;
+  height: 150px;
+  clear: both;
+  margin-top: 3px;
+  text-align: center;
+  padding: 70px 10px 20px 10px;
+}
