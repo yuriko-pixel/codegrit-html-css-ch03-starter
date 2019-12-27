@@ -1,0 +1,91 @@
+﻿@charset "UTF-8";
+
+body, div, p, h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+/* 完成見本を見ると、bodyが資格t系に見えることなく、画面いっぱいにheaderやfooter、そのほかの要素が詰められている構成なので、body全体に指定する背景色の設定は必要ないです & インデントが揃っていません */
+    /* body{
+
+    background-color: #F5F5F1;
+} */
+
+/*
+* header
+*/
+.header {
+  background-color: rgba(237, 214, 247, 1);
+  color: white;
+  width: 1300px;
+  /* height: 50px;高さがあるために、Headerというテキスト文字が上気味に見えます。消しましょう */
+  padding: 13px 10px 10px 10px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  /* margin: 10px auto;この設定があるためheaderとmain要素の間に隙間ができています。消しましょう。数値px autoという書き方は、上下=数値px　左右=auto という意味を持ちます。 */
+
+  /* CSSを以下のように一列で3つまとめて設定内容を書くことは、手書きでCSSを書く場合ありません。 */
+  /* positionとtop, right, bottom, leftの設定は、上下左右に大きく配置の調整をしたい時に行いますが、headerはその必要はありません。消しましょう。この設定があるためにheader上部に空白のギャップができていました。position設定は、不必要な箇所に書くと、余分なギャップを生みます。 */
+  /* z-indexは重なりの順番を決める設置です。header要素に重ねる要素はないのでこの設定は消しましょう。 */
+  /* position: relative; top: 50px; z-index: 2; */
+}
+
+/* インデントとセレクタ名すぐ右のスペース確保を修正しましょう */
+.container{
+  height: 600px;
+  margin: 0 auto;
+  clear: both;
+  width: 1300px;
+}
+
+/* 下と隣接しているので、1行改行して統一します */
+/*
+* main & sidebar (wrapper)
+*/
+.main-body {
+  background-color: rgb(245, 245, 242);
+  width: 1000px;
+  height: 600px;
+  padding: 30px 60px 30px 60px;
+  float: left;
+  box-sizing: border-box;
+  /* 並列して並んでいる要素.sidebarにはfloat設定があって、左に配置されるべき.main-bodyにはfloat設定がありません。書きましょう。 */
+
+  /* .headerと同様の理由です。消しましょう。 */
+  /* position: relative; top: 50px; z-index: 1; */
+}
+
+.main-body p {
+  margin: 20px 0 20px 0;
+  
+}
+
+.sidebar {
+  background-color: rgb(240, 234, 236);
+  color: white;
+  width: 300px;
+  height: 600px;
+  padding: 30px 10px 10px 10px;
+  float: right;
+  box-sizing: border-box;
+  /* .headerと同様の理由です。消しましょう。 */
+  /* position: relative; top: -530px; z-index: 2; */
+}
+
+/*
+* footer
+*/
+.footer {
+  background-color: rgba(177, 175, 179, 1);
+  color: white;
+  width: 1300px;
+  height: 150px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 70px 10px 20px 10px;
+  /* padding: 70px 10px 20px 10px; */
+  clear: both;
+  box-sizing: border-box;
+  /* .headerと同様の理由です。消しましょう。 */
+  /* position: relative; top:5px; z-index: 2; */
+}
